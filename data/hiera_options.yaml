@@ -1,0 +1,6 @@
+---
+lookup_options:
+  # Package lists should be replaced (not merged).
+  "^bacula::.*::packages":
+    merge:
+      strategy: first

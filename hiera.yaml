@@ -6,6 +6,9 @@ defaults:
   data_hash: 'yaml_data'
 
 hierarchy:
+  - name: 'Set important hiera options'
+    path: "hiera_options.yaml"
+
   - name: 'family/name/major'
     path: 'os/%{facts.os.family}/%{facts.os.name}/%{facts.os.release.major}.yaml'
 

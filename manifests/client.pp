@@ -54,9 +54,7 @@ class bacula::client (
   $conf_dir = $bacula::conf_dir
   $config_file = "${conf_dir}/bacula-fd.conf"
 
-  package { $packages:
-    ensure => present,
-  }
+  ensure_packages($packages)
 
   service { $services:
     ensure  => running,
